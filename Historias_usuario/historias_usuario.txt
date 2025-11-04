@@ -1,0 +1,75 @@
+   ✔ Análisis y alcance del proyecto
+
+📌 Análisis inicial:
+
+La aplicación seleccionada es Pinterest Lite, una versión más ligera de la aplicación original de Pinterest, diseñada para ocupar menos espacio de almacenamiento en el dispositivo y funcionar de manera más eficiente en conexiones a internet lentas.
+
+La aplicación permite a los usuarios explorar, guardar y organizar pines en tableros personalizados, manteniendo las funciones esenciales de la plataforma original, pero con una interfaz más simple y ligera.
+ 
+El objetivo del análisis inicial es comprender el funcionamiento general de la aplicación y definir las funcionalidades más relevantes a probar, asegurando que la experiencia de usuario sea fluida y que los procesos principales funcionen correctamente.
+
+📌 Épica: 
+
+Gestión de pines.
+
+📌 Justificación:
+
+Se eligió esta épica porque representa una de las funcionalidades principales de Pinterest Lite y es fundamental para la experiencia del usuario. A través de la gestión de pines, los usuarios pueden explorar contenido visual, guardar imágenes de interés, organizarlas en tableros y acceder a ellas posteriormente, lo que forma la base del uso de la aplicación.
+
+📌 Historias de usuario con criterios de aceptación:
+
+🔸 HU-01: Como usuario, quiero crear una cuenta e iniciar sesión, para    acceder a mis tableros y pines.
+
+ - CA 1: El usuario puede registrarse con correo electrónico válido y contraseña segura.
+ - CA 2: Si algún campo se completa incorrectamente, se muestra un mensaje de error.
+ - CA 3: El usuario puede iniciar sesión correctamente con sus credenciales. 
+
+🔸 HU-02: Como usuario, quiero buscar pines por palabra clave, para   encontrar contenido de mi interés.
+
+ - CA 1: El buscador muestra resultados relacionados con la palabra ingresada.
+ - CA 2: No se producen errores ni demoras excesivas durante la búsqueda.
+ - CA 3: Al seleccionar un pin, se muestra su información completa.
+
+🔸 HU-03: Como usuario, quiero guardar pines en mis tableros, para organizarlos según mis temas de interés.
+
+ - CA 1: El usuario puede elegir un tablero existente o crear uno nuevo.
+ - CA 2: El pin se guarda correctamente en el tablero seleccionado.
+ - CA 3: El usuario puede verificar el pin guardado en su tablero.
+
+🔸 HU-04: Como usuario, quiero visualizar todos los pines guardados en mis tableros para acceder fácilmente al contenido que me interesa.
+
+ - CA 1: El usuario puede acceder a la sección "Mis tableros".
+ - CA 2: Al seleccionar un tablero, se muestran todos los pines guardados en él.
+ - CA 3: Las imágenes de los pines cargan correctamente.
+ - CA 4: Si no hay pines guardados, el sistema muestra un mensaje informativo.
+
+🔸 HU-05: Como usuario, quiero editar mi perfil, para actualizar mi información personal.
+
+ - CA 1: Se pueden modificar los campos de nombre, descripción o imagen de  perfil.
+ - CA 2: Los cambios se guardan y se reflejan correctamente en la interfaz.
+ - CA 3: Si ocurre un error, se muestra un mensaje explicativo.
+
+📌 Alcance del Testing:
+
+✅ Qué se probará: 
+ 
+ 1. El proceso de registro e inicio de sesión de usuarios.
+ 2. La búsqueda de pines mediante palabras clave y la visualización correcta de los resultados.
+ 3. La creación, edición y visualización de tableros.
+ 4. La funcionalidad de guardado de pines en tableros existentes o nuevos.
+ 5. La visualización correcta de los pines guardados dentro de cada tablero.
+ 6. La edición del perfil de usuario.
+ 7. La interfaz principal, verificando que sea intuitiva y que las acciones respondan correctamente. 
+
+❌ Qué no se probará:
+
+ 1. La conexión con servicios externos o servidores reales.
+ 2. Las notificaciones automáticas al usuario.
+ 3. Las pruebas de rendimiento o compatibilidades entre dispositivos.
+ 4. Las traducciones o localización a otros idiomas. 
+ 5. Las funcionalidades premium que no estén disponibles en la versión Lite.
+
+
+
+
+
