@@ -1,0 +1,49 @@
+ ✔ Testing de API - Fake Store API
+
+Fecha: 7 de noviembre de 2025
+Herramienta utilizada: Postman
+Ambiente: https://fakestoreapi.com
+Testing: Nadia Barolin
+
+---------------------------------
+
+Resumen: 
+Se realizaron pruebas sobre la API Fake Store, con el objetivo de validar el correcto funcionamiento de los endpoints (GET, POST, PUT) y verificar el manejo de errores ante solicitudes inválidas. 
+
+---------------------------------
+
+📋 Casos ejecutados: 
+
+🔸API-01 -> GET /products
+Resultados: ✅ 200 OK. Devuelve listado completo de productos con estructura JSON válida.
+
+🔸API-02 -> GET /products/12
+Resultados: ✅ 200 OK. Devuelve producto con id=12, estructura JSON coherente (campos id, title, price, description, category, image).
+
+🔸API-03 | POST /products  
+Resultado: ✅ 201 Created. Producto creado correctamente; se genera un id automático en la respuesta.
+
+🔸API-04 | PUT /products/10  
+Resultado: ✅ 200 OK. El producto fue actualizado exitosamente (por ejemplo, cambio en el precio o título).
+
+🔸API-05 | POST /products (JSON mal formado)  
+Resultado: ⚠️ 400 Bad Request. La API respondió con error de formato, indicando que no se pudo procesar el body por falta o error de llave.  
+Resultado esperado cumplido (caso negativo exitoso).
+
+---------------------------------
+
+🧠 Conclusión:
+- Los endpoints principales GET, POST y PUT funcionan correctamente.  
+- El caso negativo demostró que la API maneja adecuadamente errores de formato en las solicitudes.  
+- La estructura JSON es consistente con el modelo esperado.  
+- No se detectaron defectos en los endpoints probados.
+
+---------------------------------
+
+Evidencias:
+
+Capturas de todas las ejecuciones disponibles en la siguiente presentación:  
+🔗 https://docs.google.com/presentation/d/1KYT3ipW8t0RXCzw8e4Ye8hRYSZinMPGyWY8CGTrUluk/edit?usp=sharing
+ 
+
+
