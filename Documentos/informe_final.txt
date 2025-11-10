@@ -1,0 +1,70 @@
+🧾 Proyecto: Pinterest Lite 
+Tester: Nadia Barolin
+Fecha: 4 noviembre de 2025
+
+_________________________________________________________
+
+🔎 Alcance del testing:
+
+Se realizaron pruebas funcionales y de usabilidad sobre la aplicación Pinterest Lite, enfocadas en las funciones principales: 
+     - Registro e inicio de sesión de usuarios.
+     - Búsqueda, guardado y visualización de pines.
+     - Creación y gestión de tableros.
+     - Edición de perfil.
+     - Manejo de errores ante fallas de conexión.
+
+🔧 Ambiente de prueba:
+
+  - Dispositivo: Android (móvil real)
+  - Sistema operativo: Android 13
+  - Conexión: Wi-Fi y datos móviles
+  - Versión de la app: Pinterest Lite(13.41.0)
+  - Tipo de pruebas: Manuales funcionales, exploratorias y de interfaz
+
+
+📊 Resultados generales:
+
+ - Casos de prueba ejecutados: 15
+ - Casos OK: 14
+ - Casos con fallas: 1 menor
+ - Defectos detectados: 4 (1 baja, 3 medias)
+ - Porcentaje de éxito: 93%
+
+La aplicación respondió correctamente y mantuvo buena estabilidad durante las pruebas, sin cierres inesperados ni errores críticos.
+
+❌ Defectos críticos encontrados:
+
+ - Botón “Listo” inactivo tras cambiar la foto de perfil.
+ - Mensaje genérico al eliminar todos los tableros que no comunica claramente el estado vacío.
+ - Demora en la actualización de contenido tras recuperar conexión.
+ - Mensaje poco claro al solicitar edad durante el registro. (no especifica restricción por edad mínima).
+
+Ninguno de los defectos interrumpe las funciones principales, pero afecta la claridad y experiencia del usuario.
+
+
+🧠 Conclusión general:
+
+La aplicación cumple con las funciones principales, ofreciendo una navegación fluida y una interfaz intuitiva. Los defectos detectados no afectan la operación crítica, pero se recomienda corregirlos para mejorar la claridad y la experiencia del usuario.
+
+
+💡 Recomendaciones:
+
+> Corrección del botón “Listo” inactivo:
+
+Verificar la lógica del botón de confirmación al cambiar la foto de perfil. Si bien la acción se completa correctamente, el botón permanece inactivo, lo cual genera confusión en el usuario sobre si el cambio fue guardado.
+
+> Mensajes más claros en pantallas vacías:
+
+Ajustar los textos informativos más específicos del estado actual. Para mejorar la comunicación y experiencia de usuario. Por ejemplo: “No tienes tableros guardados todavía. Crea uno nuevo para empezar”.
+
+> Mejora en la actualización de contenido tras reconexión:
+
+Aplicar un refresco automático más ágil cuando se restablece la conexión, evitando la demora perceptible en la carga de pines o contenido nuevo.
+
+> Mejorar la validación de edad durante el registro:
+Aclarar el motivo de error al ingresar una fecha inválida, indicando el rango de edad permitido.
+
+> Revisión de la usabilidad general:
+Continuar con test de usabilidad y accesibilidad para garantizar que la versión Lite mantenga una experiencia fluida incluso en dispositivos de bajo rendimiento o con conexión limitada.
+
+
